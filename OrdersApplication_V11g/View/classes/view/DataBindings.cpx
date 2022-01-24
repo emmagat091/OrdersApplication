@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="11.1.2.64.36" id="DataBindings"
+             SeparateXMLFiles="false" Package="view" ClientType="JClient">
+  <pageMap>
+    <page path="view.Form" usageId="view_FormPageDef"/>
+    <page path="view.PanelOrdersView1Helper" usageId="view_PanelOrdersView1HelperPageDef"/>
+    <page path="view.PanelOrdersView1Helper" usageId="view_PanelOrdersView1Helper1PageDef"/>
+    <page path="view.OrderItemsPanel" usageId="view_OrderItemsPanelPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="view_FormPageDef" path="view.pageDefs.FormPageDef"/>
+    <page id="view_PanelOrdersView1HelperPageDef" path="view.pageDefs.PanelOrdersView1HelperPageDef"/>
+    <page id="view_PanelOrdersView1Helper1PageDef" path="view.pageDefs.PanelOrdersView1Helper1PageDef"/>
+    <page id="view_OrderItemsPanelPageDef" path="view.pageDefs.OrderItemsPanelPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     ExceptionMode="Immediate" xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

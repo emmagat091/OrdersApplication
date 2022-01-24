@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="11.1.2.64.36"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="OrderItemsView1"
+    ViewObjectName="model.OrderItemsView"/>
+  <ViewUsage
+    Name="OrdersView1"
+    ViewObjectName="model.OrdersView"/>
+  <ViewUsage
+    Name="OrderItemsView2"
+    ViewObjectName="model.OrderItemsView"/>
+  <ViewLinkUsage
+    Name="OrderItemsOrdersFkLink1"
+    ViewLinkObjectName="model.OrderItemsOrdersFkLink"
+    SrcViewUsageName="model.AppModule.OrdersView1"
+    DstViewUsageName="model.AppModule.OrderItemsView2"
+    Reversed="false"/>
+</AppModule>

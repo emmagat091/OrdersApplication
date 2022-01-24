@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="11.1.2.64.36" id="FormPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <page id="view_PanelOrdersView1HelperPageDef" path="view.pageDefs.PanelOrdersView1HelperPageDef"/>
+    <page id="view_PanelOrdersView1Helper1PageDef" path="view.pageDefs.PanelOrdersView1Helper1PageDef"/>
+    <page id="view_OrderItemsPanelPageDef" path="view.pageDefs.OrderItemsPanelPageDef"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

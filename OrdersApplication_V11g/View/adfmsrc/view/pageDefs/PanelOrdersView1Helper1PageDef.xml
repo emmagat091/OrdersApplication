@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="11.1.2.64.36" id="PanelOrdersView1Helper1PageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="OrdersView1" RangeSize="25" DataControl="AppModuleDataControl" id="OrdersView1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="OrdersView1Iterator" id="OrderId" xmlns="http://xmlns.oracle.com/adfm/jcuimodel">
+      <AttrNames xmlns="http://xmlns.oracle.com/adfm/uimodel">
+        <Item Value="OrderId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView1Iterator" id="OrderDate" xmlns="http://xmlns.oracle.com/adfm/jcuimodel">
+      <AttrNames xmlns="http://xmlns.oracle.com/adfm/uimodel">
+        <Item Value="OrderDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView1Iterator" id="OrderStatusCode"
+                     xmlns="http://xmlns.oracle.com/adfm/jcuimodel">
+      <AttrNames xmlns="http://xmlns.oracle.com/adfm/uimodel">
+        <Item Value="OrderStatusCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView1Iterator" id="OrderTotal" xmlns="http://xmlns.oracle.com/adfm/jcuimodel">
+      <AttrNames xmlns="http://xmlns.oracle.com/adfm/uimodel">
+        <Item Value="OrderTotal"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

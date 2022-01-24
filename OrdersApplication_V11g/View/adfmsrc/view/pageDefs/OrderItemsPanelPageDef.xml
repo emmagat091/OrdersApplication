@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="11.1.2.64.36" id="OrderItemsPanelPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="OrderItemsView2" RangeSize="25" DataControl="AppModuleDataControl" id="OrderItemsView2Iterator"/>
+    <iterator Binds="OrderItemsView2" RangeSize="25" DataControl="AppModuleDataControl" id="OrderItemsView2Iterator1"/>
+  </executables>
+  <bindings>
+    <table ColumnSort="entireCollection" IterBinding="OrderItemsView2Iterator" id="OrderItemsView2"
+           xmlns="http://xmlns.oracle.com/adfm/jcuimodel">
+      <AttrNames xmlns="http://xmlns.oracle.com/adfm/uimodel">
+        <Item Value="OrderId"/>
+        <Item Value="LineItemId"/>
+        <Item Value="ProductId"/>
+        <Item Value="Quantity"/>
+        <Item Value="UnitPrice"/>
+        <Item Value="CreatedBy"/>
+        <Item Value="CreationDate"/>
+        <Item Value="LastUpdatedBy"/>
+        <Item Value="LastUpdateDate"/>
+        <Item Value="ObjectVersionId"/>
+      </AttrNames>
+    </table>
+    <table ColumnSort="entireCollection" IterBinding="OrderItemsView2Iterator" id="OrderItemsView21"
+           xmlns="http://xmlns.oracle.com/adfm/jcuimodel">
+      <AttrNames xmlns="http://xmlns.oracle.com/adfm/uimodel">
+        <Item Value="OrderId"/>
+        <Item Value="LineItemId"/>
+        <Item Value="ProductId"/>
+        <Item Value="Quantity"/>
+        <Item Value="UnitPrice"/>
+        <Item Value="CreatedBy"/>
+        <Item Value="CreationDate"/>
+        <Item Value="LastUpdatedBy"/>
+        <Item Value="LastUpdateDate"/>
+        <Item Value="ObjectVersionId"/>
+      </AttrNames>
+    </table>
+  </bindings>
+</pageDefinition>
